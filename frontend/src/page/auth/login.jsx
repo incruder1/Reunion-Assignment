@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://reunionbackend-production.up.railway.app//api/login", {
+      const res = await axios.post("https://reunionbackend-production.up.railway.app/api/login", {
         email,
         password,
       });
