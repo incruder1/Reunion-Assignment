@@ -7,9 +7,9 @@ const router = express.Router();
 
 router.get("/list-property",list);
 
-router.post("/add",requireSignIn,isAdmin,addProperty);
+router.post("/add",addProperty);
 
-router.put("/:id",requireSignIn,isAdmin,updateProperty)
+router.put("/:id",updateProperty)
 // requireSignIn,isAdmin
-router.delete("/:id",requireSignIn,isAdmin,deleteProperty);
+router.delete("/:id",deleteProperty);
 export default router;
